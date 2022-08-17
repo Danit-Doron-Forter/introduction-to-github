@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        mavenCentral()
+
+        }
+    }
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven {
+            url "https://mobile-sdks.forter.com/android"
+            credentials {
+                username "forter-android-sdk"
+                password "HvYumAfjVQYQFyoGsmNAefGdR84Esqig"
+            }
+        }
+    }
+}
+rootProject.name = "My_Orders"
+include ':app'

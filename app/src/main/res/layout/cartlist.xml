@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/OrderSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="Order Summary"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/drinkName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OrderSummary"
+        android:layout_marginLeft="3dp"
+        android:text="Drink Name"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/quantityinOrderSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/drinkName"
+        android:text="x"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hasTopping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drinkName"
+
+        android:layout_marginLeft="20dp"
+        android:text="has topping:"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/hasCream"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/drinkName"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/hasTopping"
+        android:text="has cream:"
+        android:textStyle="italic" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="$10"
+        android:id="@+id/priceinOrderSummary"
+        android:layout_marginRight="10dp"/>
+
+
+
+</RelativeLayout>
